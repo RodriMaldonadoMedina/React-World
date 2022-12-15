@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "./components/navbar";
+import Main from "./components/main"
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <header>
         <Navbar />
       </header>
+      <main className="container">
+        <Main />
+      </main>
     </div>
   );
 }
