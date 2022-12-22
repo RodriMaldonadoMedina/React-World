@@ -1,4 +1,7 @@
-import "../styles/pais.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/pais.css";
+
 
 const Pais = ({pais}) => {
     return (
@@ -11,7 +14,7 @@ const Pais = ({pais}) => {
                 <p className="card-text my-1">{`Capital: ${pais.capital}`}</p>
             </div>
             <div className="card-footer text-center">
-                <button className="btn btn-primary">Info</button>
+                <Link to={`/info/${pais}`} className="btn btn-primary">Info</Link>
             </div>
         </div>
     );

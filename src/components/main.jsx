@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { BsSearch } from "react-icons/bs"
 import "../styles/main.css"

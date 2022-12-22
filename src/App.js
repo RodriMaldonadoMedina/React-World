@@ -1,19 +1,24 @@
 import "bootstrap/dist/css/bootstrap.css";
 //lo tengo que importar porque si no, no me anda el dropdown
 import "bootstrap/dist/js/bootstrap.js";
-import Navbar from "./components/navbar";
-import Main from "./components/main"
+import Navbar from "./components/navbar.jsx";
+import Main from "./components/main.jsx"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PaisExtendido from "./components/paisExtendido.jsx";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <header>
         <Navbar />
       </header>
       <main className="container">
-        <Main />
+        <Routes>
+          <Route path="/" element={<Main/>} />
+          <Route path="/info/:pais" element={<PaisExtendido/>} />
+        </Routes>
       </main>
-    </div>
+    </BrowserRouter>
   );
 }
 
