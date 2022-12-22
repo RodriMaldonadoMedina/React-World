@@ -4,6 +4,7 @@ import "../styles/pais.css";
 
 
 const Pais = ({pais}) => {
+    let nombrePais = pais.name.official;
     return (
         <div className="card shadow mb-3">
             <img src={pais.flags.png} className="card-img-top flag" alt="Bandera"/>
@@ -14,7 +15,7 @@ const Pais = ({pais}) => {
                 <p className="card-text my-1">{`Capital: ${pais.capital}`}</p>
             </div>
             <div className="card-footer text-center">
-                <Link to={`/info/${pais}`} className="btn btn-primary">Info</Link>
+                <Link to={`/info/${nombrePais}`} className="btn btn-primary">Info</Link>
             </div>
         </div>
     );

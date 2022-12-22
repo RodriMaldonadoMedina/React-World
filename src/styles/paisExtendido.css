@@ -1,0 +1,8 @@
+.flag-container{
+    width: 50%;
+    height: 400px;
+}
+.flag-container img{
+    width: 100%;
+    object-fit: contain;
+}

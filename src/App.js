@@ -15,7 +15,7 @@ function App() {
       <main className="container">
         <Routes>
           <Route path="/" element={<Main/>} />
-          <Route path="/info/:pais" element={<PaisExtendido/>} />
+          <Route path="/info/:nombrePais" element={<PaisExtendido/>} />
         </Routes>
       </main>
     </BrowserRouter>
