@@ -5,9 +5,11 @@ import "../styles/paisExtendido.css";
 const PaisExtendido = () => {
     let { nombrePais } = useParams();
     const [ pais, setPais ] = useState({});
+    const [ language, setLanguage ] = useState([]);
 
     useEffect(()=>{
         paisInfo(nombrePais);
+        
     },[])
 
     const paisInfo = async (nombre) => {
@@ -21,15 +23,13 @@ const PaisExtendido = () => {
         }
     }
 
-    const getData = () => {
-        let nativeName = Object.values(pais.name?.nativeName);
-        console.log(nativeName)
-        return nativeName[0].official;
-    }
-
-    let name = getData();
+    if (pais.language){
+        setLanguage(Object.values(pais.languages));
+        console.log(language[0]);
+    }    
 
     return (
+        pais ?
             <div>
                 <Link to="/" className="btn btn-primary my-4">Back</Link>
                 <div className="d-flex">
@@ -37,20 +37,20 @@ const PaisExtendido = () => {
                         <img src={pais.flags?.png}/>
                     </div>
                     <div >
-                        <h2>{pais.name?.official}</h2>
+                        <h2>{nombrePais}</h2>
                         <div>
-                            <p className="">Native Name: {name}</p>
-                            {/* <p className="">Population: {pais.population}</p>
+                            <p className="">Native Name: {pais.name?.common}</p>
+                            <p className="">Population: {pais.population}</p>
                             <p className="">Region: {pais.region}</p>
                             <p className="">Sub Region: {pais.subregion}</p>
-                            <p className="">Capital: {}</p>
-                            <p className="">Top Level Domain: {}</p>
-                            <p className="">Currencies: {}</p>
-                            <p className="">Languages: {}</p> */}
+                            <p className="">Capital: {pais.capital}</p>
+                            <p className="">Top Level Domain: {pais.tld}</p>
+                            {/* <p className="">Currencies: {pais.currencies}</p> */}
+                            {/* <p className="">Languages: {Object.values(pais.languages)[0]}</p> */}
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> : null
      );
 }
 

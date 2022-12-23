@@ -4,7 +4,7 @@ import "../styles/pais.css";
 
 
 const Pais = ({pais}) => {
-    let nombrePais = pais.name.official;
+    let nombrePais = pais.name.common;
     return (
         <div className="card shadow mb-3">
             <img src={pais.flags.png} className="card-img-top flag" alt="Bandera"/>
