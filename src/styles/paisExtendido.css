@@ -1,8 +1,21 @@
 .flag-container{
-    width: 50%;
-    height: 400px;
+    width: 40%;
+    height: auto;
 }
 .flag-container img{
     width: 100%;
     object-fit: contain;
+}
+.info-container{
+    width: 55%;
+}
+
+@media screen and (max-width: 480px){
+        .pais{
+            display: flex;
+            flex-direction: column;
+        }
+        .flag-container{
+            width: 100%;
+        }
 }
