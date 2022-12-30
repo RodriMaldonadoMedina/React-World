@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import "../styles/paisExtendido.css";
 
 const PaisExtendido = () => {
-    let { nombrePais } = useParams();
+    const { nombrePais } = useParams();
     const [ pais, setPais ] = useState({});
     const [ language, setLanguage ] = useState([]);
 
