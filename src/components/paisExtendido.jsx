@@ -11,6 +11,7 @@ const PaisExtendido = () => {
         paisInfo(nombrePais);
     },[])
 
+    //hago el fetch ya en el componente con el nombre que paso mediante useParams
     const paisInfo = async (nombre) => {
         try {
             const resp = await fetch("https://restcountries.com/v3.1/name/" + nombre);

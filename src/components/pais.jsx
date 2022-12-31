@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/pais.css";
 
-
+//Componente que me muestra mediante una card, el pais
 const Pais = ({pais}) => {
     let nombrePais = pais.name.common;
     return (
