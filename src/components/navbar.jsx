@@ -8,6 +8,7 @@ const Navbar = () => {
             <div className="container-fluid d-flex justify-content-between mx-5">
                 <h2>Where in the world?</h2>
                 <button className="darkMode">
+                    {/* proximo a realizar */}
                     <BsMoon/> Dark Mode
                 </button>
             </div>
