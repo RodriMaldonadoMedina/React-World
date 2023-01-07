@@ -1,3 +1,12 @@
+body{
+    transition: .3s ease all;
+}
+
+body.darkMode{
+    background-color: rgb(44, 46, 45);
+    color: white
+}
+
 .searcher{
     max-width: 350px;
     width: 50%;
@@ -6,6 +15,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 
 @media screen and (max-width: 576px){
     .searcherBar{
