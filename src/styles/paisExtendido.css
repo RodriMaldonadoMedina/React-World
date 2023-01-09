@@ -10,6 +10,20 @@
     width: 55%;
 }
 
+/* darkMode para el boton de regreso */
+.darkMode .my-link{
+    border: solid 1px white;
+    background-color: orange;
+}
+.darkMode .my-link:active{
+    border: solid 1px white;
+    background-color: orange;
+}
+
+.darkMode .info-container{
+    color: white
+}
+
 @media screen and (max-width: 480px){
         .pais{
             display: flex;

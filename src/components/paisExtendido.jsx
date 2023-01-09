@@ -28,7 +28,7 @@ const PaisExtendido = () => {
     return (
         pais ?
             <div className="container-fluid">
-                <Link to="/" className="btn btn-primary my-4">Back</Link>
+                <Link to="/" className="btn btn-primary my-4 my-link">Back</Link>
                 <div className="d-flex justify-content-evenly mt-5 pais">
                     <div className="flag-container mt-4">
                         <img src={pais.flags?.png} alt="Bandera" className="border border-2 shadow"/>

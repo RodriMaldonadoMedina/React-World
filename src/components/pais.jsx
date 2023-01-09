@@ -6,7 +6,7 @@ import "../styles/pais.css";
 const Pais = ({pais}) => {
     let nombrePais = pais.name.common;
     return (
-        <div className="card shadow mb-3">
+        <div className="card mb-4">
             <img src={pais.flags.png} className="card-img-top flag" alt="Bandera"/>
             <div className="card-body">
                 <h5 className="card-title mt-2">{pais.name?.official}</h5>
@@ -15,7 +15,7 @@ const Pais = ({pais}) => {
                 <p className="card-text my-1">{`Capital: ${pais.capital}`}</p>
             </div>
             <div className="card-footer text-center">
-                <Link to={`/info/${nombrePais}`} className="btn btn-primary">Info</Link>
+                <Link to={`/info/${nombrePais}`} className="btn btn-primary my-link">Info</Link>
             </div>
         </div>
     );
