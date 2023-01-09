@@ -10,7 +10,7 @@ const darkModeToggle = () => {
 
 const Navbar = () => {
     return (
-        <nav className="navbar border-bottom border-3 shadow">
+        <nav className="navbar border-bottom border-3 my-shadow">
             <div className="container-fluid d-flex justify-content-between mx-5">
                 <h2>Where in the world?</h2>
                 <button className="switch" onClick={darkModeToggle}>

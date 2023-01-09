@@ -1,3 +1,10 @@
+.my-shadow{
+  box-shadow: 0 0 10px 10px rgba(0,0,0,.2);
+}
+.darkMode .my-shadow{
+  box-shadow: 0 0 15px 15px rgba(255,255,255,.3);
+}
+
 .switch{
   background: #343D5B;
   border-radius: 20px;
@@ -10,7 +17,6 @@
 .switch span{
   width: 30px;
   height: 30px;
-  /* line-height: 30px; */
   display: block;
   background: none;
   color: white;
@@ -19,8 +25,8 @@
 .switch::after{
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   position: absolute;
   background: #F1F1F1;
   top: 0;
@@ -28,7 +34,7 @@
   right: unset;
   border-radius: 50%;
   transition: .3s ease all;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  box-shadow: 0 0 4px 4px rgba(0,0,0,.2);
 }
 
 .switch.active{
@@ -38,4 +44,5 @@
 .switch.active::after{
   right: 0;
   left: unset;
+  box-shadow: 0 0 4px 4px rgba(255,255,255,.2);
 }

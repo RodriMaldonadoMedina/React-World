@@ -71,7 +71,7 @@ const Main = (props) => {
     }
 
     return (
-        <div className="container mx-3">
+        <div className="container mx-3 mt-2">
             <div className="searcherBar">
                 <form onSubmit={handleSubmit} className="searcher ">
                     <div className="input-group mt-4">
