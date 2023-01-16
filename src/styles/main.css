@@ -1,9 +1,16 @@
 body{
     transition: .3s ease all;
+    background: linear-gradient(
+        90deg,
+        rgba(245, 195, 176, 1) 25%,
+        rgba(247, 158, 145) 75%,
+        rgba(245, 107, 107, 0.83) 100%
+        );
+    /* background-blend-mode: normal; */
 }
 
 body.darkMode{
-    background-color: rgb(44, 46, 45);
+    background: rgb(44, 46, 45);
     color: orange
 }
 
